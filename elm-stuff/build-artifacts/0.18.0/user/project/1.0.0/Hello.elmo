@@ -1,0 +1,39 @@
+var _user$project$Hello$fillWithOnes = function (myList) {
+	var _p0 = myList;
+	if (_p0.ctor === '[]') {
+		return {ctor: '[]'};
+	} else {
+		if (_p0._1.ctor === '[]') {
+			return myList;
+		} else {
+			return {
+				ctor: '::',
+				_0: 1,
+				_1: _user$project$Hello$fillWithOnes(
+					A2(
+						_elm_lang$core$List$take,
+						_elm_lang$core$List$length(myList) - 1,
+						myList))
+			};
+		}
+	}
+};
+var _user$project$Hello$aList = {
+	ctor: '::',
+	_0: 1,
+	_1: {
+		ctor: '::',
+		_0: 2,
+		_1: {
+			ctor: '::',
+			_0: 3,
+			_1: {
+				ctor: '::',
+				_0: 4,
+				_1: {ctor: '[]'}
+			}
+		}
+	}
+};
+var _user$project$Hello$output = _elm_lang$core$Basics$toString(
+	_user$project$Hello$fillWithOnes(_user$project$Hello$aList));

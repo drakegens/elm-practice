@@ -1,0 +1,21 @@
+var _user$project$RunElmMain156588349467489134549$sendOutput = _elm_lang$core$Native_Platform.outgoingPort(
+	'sendOutput',
+	function (v) {
+		return v;
+	});
+var _user$project$RunElmMain156588349467489134549$init = {
+	ctor: '_Tuple2',
+	_0: {ctor: '_Tuple0'},
+	_1: _user$project$RunElmMain156588349467489134549$sendOutput(_user$project$Hello$output)
+};
+var _user$project$RunElmMain156588349467489134549$main = _elm_lang$core$Platform$program(
+	{
+		init: _user$project$RunElmMain156588349467489134549$init,
+		update: F2(
+			function (_p0, model) {
+				return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+			}),
+		subscriptions: function (_p1) {
+			return _elm_lang$core$Platform_Sub$none;
+		}
+	})();
